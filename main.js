@@ -15,9 +15,22 @@ function move() {
 	var c = document.getElementById("Canvas");
 	var ctx = c.getContext("2d");
 	ctx.clearRect(square.x, square.y, square.h, square.w);
-	square.x+=2;
-	square.y+=2;
+	
+	if (square.x === 0 && square.y === 0){
+		square.xdir = 1;
+		square.ydir = 1;
+	}
+	else if(square.x>=400-square.w){
+		square.xdir = -1;
+		square.ydir = -1;
+	}
+//	else if (square.x===0){
+//		square.xdir = 1;
+//	}
+	square.x+=(square.xspeed*square.xdir);
+	square.y+=(square.yspeed*square.ydir);
 	drawSquare();
+
 }
 
 function makeSquare() {
@@ -25,8 +38,13 @@ function makeSquare() {
 	x: 0,
 	y: 0,
 	h: 15,
-	w: 15
+	w: 15,
+	xdir: 1,
+	ydir: 1,
+	xspeed: 2,
+	yspeed: 2
+	}
 }
-}
-setInterval(move, 1000/60);
+
+setInterval(move, 10);
 document.getElementById("Canvas").addEventListener('click', makeSquare);
