@@ -7,9 +7,6 @@ color: green;
 #helloDiv {
 color: red;
 }
-
-#canvas{
-width: 400;
-height: 400;
-border: 1px solid #000000;
+#Canvas {
+margin: 0px auto;
 }
