@@ -5,7 +5,7 @@ var MyGame = {
 }
 var square = null;
 
-function drawSquare(){
+function moveSquare(){
 
 	var c = document.getElementById("Canvas");
 	var ctx = c.getContext("2d");
@@ -14,6 +14,7 @@ function drawSquare(){
 }
 
 function move() {
+	requestAnimationFrame(move);
 	if (square === null){
 		return;
 	}
@@ -31,7 +32,7 @@ function move() {
 	}
 	square.x+=(square.xspeed*square.xdir);
 	square.y+=(square.yspeed*square.ydir);
-	drawSquare();
+	moveSquare();
 }
 
 function makeSquare() {
@@ -48,6 +49,6 @@ function makeSquare() {
 }
 
 //setInterval(move, 10);
-requestAnimationFrame(move);
+move();
 (function(){
 document.getElementById("Canvas").addEventListener('click', makeSquare);})();
