@@ -29,6 +29,10 @@ var expected = 15;
 MyTestFramework.assertThat(actual, expected);
 }
 
+function makeSquare (){
+	return;
+}
+
 (function(){
   myFirstTest();
   checkInnerSquareXSize();
