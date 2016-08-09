@@ -14,10 +14,10 @@ body {
 
 .h1, h1 {
     font-size: 46px;
+		font-family: 'VT323', ;
 }
-
-.navbar-brand {
-	padding: 0px 15px;
+.p, p{
+		font-family: 'VT323', ;
 }
 
 .navbar-inverse {
@@ -26,7 +26,7 @@ body {
 }
 
 .full {
-  background: url(../images/wallpaper-lake-sky-stars-night-mountain.jpg) no-repeat center center fixed;
+  background: url(../images/mountain.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
