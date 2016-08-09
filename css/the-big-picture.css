@@ -8,10 +8,11 @@ body {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	background: none;
+	color: #f2f2f2;
 }
 
 .full {
-  background: url(http://www.trente.eu/wp-content/uploads/2014/10/wallpaper-lake-sky-stars-night-mountain.jpg) no-repeat center center fixed; 
+  background: url(http://www.trente.eu/wp-content/uploads/2014/10/wallpaper-lake-sky-stars-night-mountain.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
