@@ -5,19 +5,23 @@
  */
 
 body {
+	font-family: 'Jura', sans-serif;
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 	background: none;
 	color: #f2f2f2;
-	font-size: 17px;
 }
 
 .h1, h1 {
     font-size: 46px;
-		font-family: 'VT323', ;
 }
+
 .p, p{
-		font-family: 'VT323', ;
+	font-size: 20px;
+}
+
+.navbar{
+		margin-bottom: 0;
 }
 
 .navbar-inverse {
@@ -25,8 +29,12 @@ body {
 		border-color: transparent;
 }
 
+.row{
+	padding-left: 15px;
+}
+
 .full {
-  background: url(../images/mountain.jpg) no-repeat center center fixed;
+  background: url(../images/103929.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
