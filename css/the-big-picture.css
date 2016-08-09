@@ -12,8 +12,21 @@ body {
 	font-size: 17px;
 }
 
+.h1, h1 {
+    font-size: 46px;
+}
+
 .navbar-brand {
-	padding: 8px 15px;
+	padding: 0px 15px;
+}
+
+.navbar-inverse {
+    background-color: transparent;
+		border-color: transparent;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #c7c7c7;
 }
 
 .full {
