@@ -30,11 +30,11 @@ body {
 	margin-bottom: 5px;
 }
 
-.fa{
+.fab,.fas{
 	color: #c7c7c7;
 	margin: 0px 18px 15px;
 }
-.fa:hover {
+.fab:hover,.fas:hover {
 	color: #c7c7c7;
 	text-decoration: none;
 }
